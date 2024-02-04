@@ -18,9 +18,24 @@
     <ClInclude Include="src\Test.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\Orange\Core.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Orange\Application.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Orange.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Orange\EntryPoint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Orange\Application.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

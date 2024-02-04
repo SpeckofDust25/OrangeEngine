@@ -1,3 +1,2 @@
-﻿  Application.cpp
-C:\OrangeEngine\Sandbox\src\Application.cpp(7,13): warning C4326: return type of 'main' should be 'int' instead of 'void'
+﻿  SandboxApp.cpp
   Sandbox.vcxproj -> C:\OrangeEngine\bin\Debug-x64\Sandbox\Sandbox.exe
