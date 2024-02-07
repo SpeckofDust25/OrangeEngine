@@ -57,6 +57,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>ORANGE_PLATFORM_WINDOWS;ORANGE_BUILD_DLL;</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)\OrangeEngine\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -71,6 +72,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>ORANGE_PLATFORM_WINDOWS;ORANGE_BUILD_DLL;</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)\OrangeEngine\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -80,15 +82,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="src\Orange.h" />
+    <ClInclude Include="src\Orange\Log.h" />
     <ClInclude Include="src\Orange\Application.h" />
     <ClInclude Include="src\Orange\Core.h" />
     <ClInclude Include="src\Orange\EntryPoint.h" />
-    <ClInclude Include="src\Test.h" />
+    <ClInclude Include="src\Orange\Orange.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Orange\Log.cpp" />
     <ClCompile Include="src\Orange\Application.cpp" />
-    <ClCompile Include="src\Test.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
