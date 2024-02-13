@@ -1,9 +1,13 @@
 #include "Application.h"
+#include "Events/ApplicationEvent.h"
+#include "Log.h"
 #include <iostream>
 
 
 namespace Orange {
+
 	Application::Application() { 
+
 	}
 
 	Application::~Application() {
@@ -11,6 +15,7 @@ namespace Orange {
 	}
 	
 	void Application::Run() {
-		printf("Running!");
+		WindowResizeEvent e(1280, 720);
+		ORANGE_TRACE(e.ToString());
 	}
 }

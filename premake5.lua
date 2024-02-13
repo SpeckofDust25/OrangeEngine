@@ -20,7 +20,10 @@ project "OrangeEngine"      --Adding a Project
         "%{prj.name}/src/**.cpp"
     }
 
-    includedirs { "OrangeEngine/vendor/spdlog/include"}
+    includedirs { 
+	"%{prj.name}/src",
+	"OrangeEngine/vendor/spdlog/include"
+	}
 
     filter "system:windows" 
         cppdialect "C++17"
